@@ -6,6 +6,7 @@ FacebookIntegrationTutorial::Application.routes.draw do |map|
       get :comments
       get :friendpile
       get :login
+      get :canvas
     end
   end
   
