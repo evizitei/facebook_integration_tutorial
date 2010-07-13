@@ -2,6 +2,7 @@ FacebookIntegrationTutorial::Application.routes.draw do |map|
   resources :integrations do
     collection do
       get :like_button
+      get :activity_feed
     end
   end
   

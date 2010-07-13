@@ -1,0 +1,19 @@
+!!! XML
+!!!
+%html
+  %head
+    %title FacebookIntegrationTutorial
+    = csrf_meta_tag 
+  %body
+    #fb-root
+    :javascript
+      window.fbAsyncInit = function() {
+        FB.init({appId: '112593298789490', status: true, cookie: true,xfbml: true});
+      };
+      (function() {
+        var e = document.createElement('script'); e.async = true;
+        e.src = document.location.protocol +
+          '//connect.facebook.net/en_US/all.js';
+        document.getElementById('fb-root').appendChild(e);
+      }());
+    = yield 
