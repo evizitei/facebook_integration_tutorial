@@ -1,4 +1,11 @@
 FacebookIntegrationTutorial::Application.routes.draw do |map|
+  resources :integrations do
+    collection do
+      get :like_button
+    end
+  end
+  
+  match "/" => "integrations#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
