@@ -3,6 +3,8 @@ FacebookIntegrationTutorial::Application.routes.draw do |map|
     collection do
       get :like_button
       get :activity_feed
+      get :comments
+      get :friendpile
     end
   end
   
